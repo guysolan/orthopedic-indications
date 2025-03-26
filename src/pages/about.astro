@@ -1,0 +1,184 @@
+---
+import BaseHead from "../components/BaseHead.astro";
+import Footer from "../components/Footer.astro";
+import { Image } from "astro:assets";
+import nickStrasser from "../assets/nick-strasser.jpeg";
+
+const title = "About Dr. Nicholas Strasser | Orthopedic Indications";
+const description =
+    "Learn more about Dr. Nicholas Strasser, an Orthopaedic foot and ankle surgeon specializing in sports related injuries and medical education.";
+
+const experience = [
+    {
+        role: "Assistant Professor",
+        institution: "Vanderbilt Orthopaedic Institute",
+        period: "2021 - Present",
+    },
+    {
+        role: "Team Physician",
+        institution: "University of Oregon Athletics",
+        period: "Previous Position",
+    },
+    {
+        role: "Orthopaedic Team Captain",
+        institution: "Olympic Trials",
+        period: "2016, 2020",
+    },
+    {
+        role: "Surgery Division Chief",
+        institution: "Peacehealth Hospital",
+        period: "Previous Position",
+    },
+];
+---
+
+<!doctype html>
+<html lang="en">
+    <head>
+        <BaseHead title={title} description={description} />
+        <style>
+            :root {
+                --gold: #dcb86f;
+                --gold-light: #e5c999;
+                --black: #090909;
+            }
+        </style>
+    </head>
+    <body class="bg-black min-h-screen text-white">
+        <main class="mx-auto px-4 py-12 md:py-20 max-w-4xl">
+            <!-- Navigation -->
+            <nav class="mb-16">
+                <a
+                    href="/orthopedic-indications"
+                    class="inline-flex items-center gap-2 text-[var(--gold)] hover:text-[var(--gold-light)] transition-colors"
+                >
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="w-5 h-5"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                    >
+                        <path
+                            fill-rule="evenodd"
+                            d="M9.707 16.707a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414l6-6a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l4.293 4.293a1 1 0 010 1.414z"
+                            clip-rule="evenodd"></path>
+                    </svg>
+                    Back to Library
+                </a>
+            </nav>
+
+            <!-- Profile Header -->
+            <div class="flex flex-col items-center mb-16 text-center">
+                <div class="mb-8">
+                    <div
+                        class="inline-block bg-gradient-to-r from-[var(--gold)] via-[var(--gold-light)] to-[var(--gold)] p-2 rounded-full"
+                    >
+                        <Image
+                            src={nickStrasser}
+                            alt="Dr. Nicholas Strasser"
+                            class="rounded-full w-48 h-48 object-cover"
+                        />
+                    </div>
+                </div>
+                <h1 class="mb-4 font-bold text-4xl md:text-5xl">
+                    Nicholas Strasser, MD
+                </h1>
+                <p class="mb-4 text-[var(--gold)] text-xl">
+                    Orthopaedic Foot and Ankle Surgeon
+                </p>
+                <p class="text-gray-400 text-lg italic">
+                    "The sole of orthopedics 👟"
+                </p>
+            </div>
+
+            <!-- About Section -->
+            <div class="space-y-12 mb-16">
+                <div class="bg-[#232323] p-8 rounded-2xl">
+                    <h2 class="mb-6 font-bold text-[var(--gold)] text-2xl">
+                        About
+                    </h2>
+                    <p class="text-gray-300 text-lg leading-relaxed">
+                        I am an Orthopaedic foot and ankle surgeon specializing
+                        in sports related foot and ankle injuries, currently
+                        serving as an assistant professor in orthopaedics at the
+                        Vanderbilt Orthopaedic Institute since 2021. Through
+                        Orthopedic Indications, I aim to provide high-quality
+                        medical education for those in medical sales and
+                        healthcare professionals.
+                    </p>
+                </div>
+
+                <!-- Experience -->
+                <div class="bg-[#232323] p-8 rounded-2xl">
+                    <h2 class="mb-6 font-bold text-[var(--gold)] text-2xl">
+                        Professional Experience
+                    </h2>
+                    <div class="space-y-6">
+                        {
+                            experience.map((item) => (
+                                <div class="flex md:flex-row flex-col justify-between md:items-center">
+                                    <div>
+                                        <h3 class="font-semibold text-gray-200 text-lg">
+                                            {item.role}
+                                        </h3>
+                                        <p class="text-gray-400">
+                                            {item.institution}
+                                        </p>
+                                    </div>
+                                    <span class="text-[var(--gold)] text-sm">
+                                        {item.period}
+                                    </span>
+                                </div>
+                            ))
+                        }
+                    </div>
+                </div>
+
+                <!-- Personal -->
+                <div class="bg-[#232323] p-8 rounded-2xl">
+                    <h2 class="mb-6 font-bold text-[var(--gold)] text-2xl">
+                        Personal Life
+                    </h2>
+                    <p class="text-gray-300 text-lg leading-relaxed">
+                        Together with my wife, we're raising 7 children with a
+                        passion for adoption. Our family lives by the mission
+                        statement founded in Ephesians 2:10: "For we are God's
+                        handiwork, created in Christ Jesus to do good works,
+                        which God prepared in advance for us to do."
+                    </p>
+                </div>
+            </div>
+
+            <!-- Connect Section -->
+            <div class="mb-16">
+                <h2
+                    class="mb-8 font-bold text-[var(--gold)] text-2xl text-center"
+                >
+                    Connect & Learn
+                </h2>
+                <div class="flex flex-wrap justify-center gap-4">
+                    <a
+                        href="https://www.youtube.com/@OrthopedicIndications"
+                        class="bg-[var(--gold)] hover:bg-[var(--gold-light)] px-6 py-3 rounded-full font-semibold text-black transition-colors"
+                    >
+                        YouTube Channel
+                    </a>
+                    <a
+                        href="https://nickstrassermd.com"
+                        class="bg-[#232323] hover:bg-[var(--gold)] px-6 py-3 border border-[var(--gold)] rounded-full font-semibold text-[var(--gold)] hover:text-black transition-colors"
+                    >
+                        Newsletter Signup
+                    </a>
+                    <a
+                        href="https://mededgesurgical.com"
+                        class="bg-[#232323] hover:bg-[var(--gold)] px-6 py-3 border border-[var(--gold)] rounded-full font-semibold text-[var(--gold)] hover:text-black transition-colors"
+                    >
+                        MedEdge Surgical
+                    </a>
+                </div>
+            </div>
+
+            <Footer />
+        </main>
+    </body>
+</html>
