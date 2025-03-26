@@ -38,27 +38,27 @@ const description =
         </style>
     </head>
     <body class="bg-black min-h-screen text-white">
-        <main class="mx-auto px-4 py-12 md:py-20 max-w-4xl">
+        <main class="mx-auto px-3 py-8 md:py-16 max-w-4xl">
             <!-- Navigation -->
-            <nav class="mb-16">
+            <nav class="mb-12">
                 <a
                     href="/orthopedic-indications"
                     class="inline-flex items-center gap-2 text-[var(--gold)] hover:text-[var(--gold-light)] text-sm transition-colors"
                 >
-                    <ChevronLeft class="w-6 h-6" />
+                    <ChevronLeft class="w-5 h-5" />
                     Back to Library
                 </a>
             </nav>
 
             <!-- Header -->
-            <header class="mb-12">
+            <header class="mb-8">
                 <h1
-                    class="mb-4 font-bold text-[var(--gold)] text-4xl md:text-5xl"
+                    class="mb-3 font-bold text-[var(--gold)] text-2xl md:text-3xl"
                 >
                     Calcaneus Fracture Reduction Maneuver
                 </h1>
                 <div class="flex items-center gap-2 text-gray-400 text-sm">
-                    <Bone class="w-6 h-6" />
+                    <Bone class="w-5 h-5" />
                     <span>Orthopedic Surgical Guide</span>
                 </div>
                 <div class="mt-2 text-gray-500 text-sm italic">
@@ -67,12 +67,12 @@ const description =
                 </div>
             </header>
 
-            <div class="space-y-12">
+            <div class="space-y-8">
                 <!-- Overview -->
-                <div class="bg-[#232323] p-8 rounded-2xl">
-                    <div class="flex items-start gap-3">
-                        <Info class="mt-1 w-6 h-6 text-[var(--gold)]" />
-                        <p class="text-gray-300 text-lg leading-relaxed">
+                <div class="bg-[#232323] p-5 rounded-xl">
+                    <div class="flex items-start gap-2">
+                        <Info class="mt-1 w-5 h-5 text-[var(--gold)]" />
+                        <p class="text-gray-300 text-base leading-relaxed">
                             This comprehensive guide walks through the process
                             of calcaneus fracture reduction, providing detailed
                             insights into axial view interpretation and surgical
@@ -84,8 +84,8 @@ const description =
                 </div>
 
                 <!-- Initial Assessment -->
-                <div class="bg-[#232323] p-8 rounded-2xl">
-                    <h2 class="mb-6 font-bold text-[var(--gold)] text-2xl">
+                <div class="bg-[#232323] p-5 rounded-xl">
+                    <h2 class="mb-4 font-bold text-[var(--gold)] text-xl">
                         Initial Radiographic Assessment
                     </h2>
                     <div class="relative aspect-[4/3]">
@@ -98,11 +98,13 @@ const description =
                 </div>
 
                 <!-- Anatomical Components -->
-                <div class="bg-[#232323] p-8 rounded-2xl">
-                    <h2 class="mb-6 font-bold text-[var(--gold)] text-2xl">
+                <div class="bg-[#232323] p-5 rounded-xl">
+                    <h2 class="mb-4 font-bold text-[var(--gold)] text-xl">
                         Anatomical Components
                     </h2>
-                    <ul class="space-y-6 text-gray-300 text-lg">
+                    <ul
+                        class="space-y-6 text-gray-300 text-base leading-relaxed"
+                    >
                         <li class="flex items-start gap-3">
                             <ArrowRight
                                 class="mt-1.5 w-5 h-5 text-[var(--gold)]"
@@ -154,13 +156,13 @@ const description =
                     </ul>
 
                     <div
-                        class="bg-[#1a1a1a] mt-8 p-6 border border-[var(--gold)]/20 rounded-xl"
+                        class="bg-[#1a1a1a] mt-6 p-4 border border-[var(--gold)]/20 rounded-xl"
                     >
-                        <div class="flex items-start gap-3">
+                        <div class="flex items-start gap-2">
                             <AlertCircle
-                                class="mt-1 w-6 h-6 text-[var(--gold)]"
+                                class="mt-1 w-5 h-5 text-[var(--gold)]"
                             />
-                            <p class="text-gray-300 text-lg leading-relaxed">
+                            <p class="text-gray-300 text-base leading-relaxed">
                                 <strong class="text-gray-200"
                                     >Critical Anatomical Consideration:</strong
                                 ><br />
@@ -174,8 +176,8 @@ const description =
                 </div>
 
                 <!-- Video Section - Moved up for better flow -->
-                <div class="bg-[#232323] p-8 rounded-2xl">
-                    <h2 class="mb-6 font-bold text-[var(--gold)] text-2xl">
+                <div class="bg-[#232323] p-5 rounded-xl">
+                    <h2 class="mb-4 font-bold text-[var(--gold)] text-xl">
                         Explainer Video
                     </h2>
                     <div class="relative pb-[56.25%] h-0">
@@ -190,24 +192,24 @@ const description =
                 </div>
 
                 <!-- Fracture Mechanism -->
-                <div class="bg-[#232323] p-8 rounded-2xl">
-                    <h2 class="mb-6 font-bold text-[var(--gold)] text-2xl">
+                <div class="bg-[#232323] p-5 rounded-xl">
+                    <h2 class="mb-4 font-bold text-[var(--gold)] text-xl">
                         Understanding the Fracture Pattern
                     </h2>
-                    <p class="mb-8 text-gray-300 text-lg leading-relaxed">
+                    <p class="mb-8 text-gray-300 text-base leading-relaxed">
                         Calcaneus fractures follow a predictable pattern during
                         axial loading, typically seen in falls from height.
                         Understanding this sequence is crucial for reduction:
                     </p>
 
-                    <div class="gap-8 grid md:grid-cols-2">
+                    <div class="gap-4 grid md:grid-cols-2">
                         <div class="space-y-4">
                             <div class="space-y-2">
-                                <h3 class="font-semibold text-gray-200 text-xl">
+                                <h3 class="font-semibold text-gray-200 text-lg">
                                     1. Initial Impact
                                 </h3>
                                 <p
-                                    class="text-gray-300 text-lg leading-relaxed"
+                                    class="text-gray-300 text-base leading-relaxed"
                                 >
                                     The talus drives downward, creating the
                                     primary fracture line through the posterior
@@ -218,18 +220,18 @@ const description =
                                 <Image
                                     src={injury1}
                                     alt="Initial fracture through posterior facet"
-                                    class="bg-[#1a1a1a] rounded-xl w-full h-full object-contain"
+                                    class="bg-white rounded-xl w-full h-full object-contain"
                                 />
                             </div>
                         </div>
 
                         <div class="space-y-4">
                             <div class="space-y-2">
-                                <h3 class="font-semibold text-gray-200 text-xl">
+                                <h3 class="font-semibold text-gray-200 text-lg">
                                     2. Central Depression
                                 </h3>
                                 <p
-                                    class="text-gray-300 text-lg leading-relaxed"
+                                    class="text-gray-300 text-base leading-relaxed"
                                 >
                                     The central articular fragment becomes
                                     depressed, compromising joint surface
@@ -240,18 +242,18 @@ const description =
                                 <Image
                                     src={injury2}
                                     alt="Central depression of articular surface"
-                                    class="bg-[#1a1a1a] rounded-xl w-full h-full object-contain"
+                                    class="bg-white rounded-xl w-full h-full object-contain"
                                 />
                             </div>
                         </div>
 
                         <div class="space-y-4">
                             <div class="space-y-2">
-                                <h3 class="font-semibold text-gray-200 text-xl">
+                                <h3 class="font-semibold text-gray-200 text-lg">
                                     3. Lateral Wall Blowout
                                 </h3>
                                 <p
-                                    class="text-gray-300 text-lg leading-relaxed"
+                                    class="text-gray-300 text-base leading-relaxed"
                                 >
                                     Continued force causes lateral wall
                                     expansion, potentially leading to peroneal
@@ -262,18 +264,18 @@ const description =
                                 <Image
                                     src={injury3}
                                     alt="Lateral wall blowout"
-                                    class="bg-[#1a1a1a] rounded-xl w-full h-full object-contain"
+                                    class="bg-white rounded-xl w-full h-full object-contain"
                                 />
                             </div>
                         </div>
 
                         <div class="space-y-4">
                             <div class="space-y-2">
-                                <h3 class="font-semibold text-gray-200 text-xl">
+                                <h3 class="font-semibold text-gray-200 text-lg">
                                     4. Varus Deformity
                                 </h3>
                                 <p
-                                    class="text-gray-300 text-lg leading-relaxed"
+                                    class="text-gray-300 text-base leading-relaxed"
                                 >
                                     The tuberosity fragment displaces into varus
                                     and shortens, affecting overall heel
@@ -284,7 +286,7 @@ const description =
                                 <Image
                                     src={injury4}
                                     alt="Varus deformity of tuberosity"
-                                    class="bg-[#1a1a1a] rounded-xl w-full h-full object-contain"
+                                    class="bg-white rounded-xl w-full h-full object-contain"
                                 />
                             </div>
                         </div>
@@ -292,23 +294,23 @@ const description =
                 </div>
 
                 <!-- Surgical Technique -->
-                <div class="bg-[#232323] p-8 rounded-2xl">
-                    <h2 class="mb-6 font-bold text-[var(--gold)] text-2xl">
+                <div class="bg-[#232323] p-5 rounded-xl">
+                    <h2 class="mb-4 font-bold text-[var(--gold)] text-xl">
                         Step-by-Step Reduction Technique
                     </h2>
-                    <p class="mb-8 text-gray-300 text-lg leading-relaxed">
+                    <p class="mb-8 text-gray-300 text-base leading-relaxed">
                         The surgical reduction follows a methodical sequence to
                         restore normal calcaneal anatomy and function:
                     </p>
 
-                    <div class="gap-8 grid md:grid-cols-2">
+                    <div class="gap-4 grid md:grid-cols-2">
                         <div class="space-y-4">
                             <div class="space-y-2">
-                                <h3 class="font-semibold text-gray-200 text-xl">
+                                <h3 class="font-semibold text-gray-200 text-lg">
                                     1. Initial Fixation
                                 </h3>
                                 <p
-                                    class="text-gray-300 text-lg leading-relaxed"
+                                    class="text-gray-300 text-base leading-relaxed"
                                 >
                                     Place initial K-wire in the tuberosity
                                     fragment to establish control and provide
@@ -319,18 +321,18 @@ const description =
                                 <Image
                                     src={fix1}
                                     alt="Initial K-wire placement"
-                                    class="bg-[#1a1a1a] rounded-xl w-full h-full object-contain"
+                                    class="bg-white rounded-xl w-full h-full object-contain"
                                 />
                             </div>
                         </div>
 
                         <div class="space-y-4">
                             <div class="space-y-2">
-                                <h3 class="font-semibold text-gray-200 text-xl">
+                                <h3 class="font-semibold text-gray-200 text-lg">
                                     2. Height Restoration
                                 </h3>
                                 <p
-                                    class="text-gray-300 text-lg leading-relaxed"
+                                    class="text-gray-300 text-base leading-relaxed"
                                 >
                                     Manipulate K-wires to begin restoring
                                     calcaneal height and overall alignment.
@@ -340,18 +342,18 @@ const description =
                                 <Image
                                     src={fix2}
                                     alt="Height restoration maneuver"
-                                    class="bg-[#1a1a1a] rounded-xl w-full h-full object-contain"
+                                    class="bg-white rounded-xl w-full h-full object-contain"
                                 />
                             </div>
                         </div>
 
                         <div class="space-y-4">
                             <div class="space-y-2">
-                                <h3 class="font-semibold text-gray-200 text-xl">
+                                <h3 class="font-semibold text-gray-200 text-lg">
                                     3. Width Control
                                 </h3>
                                 <p
-                                    class="text-gray-300 text-lg leading-relaxed"
+                                    class="text-gray-300 text-base leading-relaxed"
                                 >
                                     Apply controlled compression to narrow the
                                     fracture and address lateral wall expansion.
@@ -361,18 +363,18 @@ const description =
                                 <Image
                                     src={fix3}
                                     alt="Width reduction technique"
-                                    class="bg-[#1a1a1a] rounded-xl w-full h-full object-contain"
+                                    class="bg-white rounded-xl w-full h-full object-contain"
                                 />
                             </div>
                         </div>
 
                         <div class="space-y-4">
                             <div class="space-y-2">
-                                <h3 class="font-semibold text-gray-200 text-xl">
+                                <h3 class="font-semibold text-gray-200 text-lg">
                                     4. Rotational Correction
                                 </h3>
                                 <p
-                                    class="text-gray-300 text-lg leading-relaxed"
+                                    class="text-gray-300 text-base leading-relaxed"
                                 >
                                     Use K-wires to correct rotational deformity
                                     and restore normal heel alignment.
@@ -382,18 +384,18 @@ const description =
                                 <Image
                                     src={fix4}
                                     alt="Rotational alignment correction"
-                                    class="bg-[#1a1a1a] rounded-xl w-full h-full object-contain"
+                                    class="bg-white rounded-xl w-full h-full object-contain"
                                 />
                             </div>
                         </div>
 
                         <div class="space-y-4">
                             <div class="space-y-2">
-                                <h3 class="font-semibold text-gray-200 text-xl">
+                                <h3 class="font-semibold text-gray-200 text-lg">
                                     5. Joint Surface Elevation
                                 </h3>
                                 <p
-                                    class="text-gray-300 text-lg leading-relaxed"
+                                    class="text-gray-300 text-base leading-relaxed"
                                 >
                                     Elevate the depressed articular fragment to
                                     restore joint congruity and prevent
@@ -404,18 +406,18 @@ const description =
                                 <Image
                                     src={fix5}
                                     alt="Joint surface restoration"
-                                    class="bg-[#1a1a1a] rounded-xl w-full h-full object-contain"
+                                    class="bg-white rounded-xl w-full h-full object-contain"
                                 />
                             </div>
                         </div>
 
                         <div class="space-y-4">
                             <div class="space-y-2">
-                                <h3 class="font-semibold text-gray-200 text-xl">
+                                <h3 class="font-semibold text-gray-200 text-lg">
                                     6. Wall Reduction
                                 </h3>
                                 <p
-                                    class="text-gray-300 text-lg leading-relaxed"
+                                    class="text-gray-300 text-base leading-relaxed"
                                 >
                                     Complete the lateral wall reduction to
                                     prevent tendon impingement and restore
@@ -426,18 +428,18 @@ const description =
                                 <Image
                                     src={fix6}
                                     alt="Lateral wall reduction completion"
-                                    class="bg-[#1a1a1a] rounded-xl w-full h-full object-contain"
+                                    class="bg-white rounded-xl w-full h-full object-contain"
                                 />
                             </div>
                         </div>
 
                         <div class="space-y-4 md:col-span-2">
                             <div class="space-y-2">
-                                <h3 class="font-semibold text-gray-200 text-xl">
+                                <h3 class="font-semibold text-gray-200 text-lg">
                                     7. Definitive Fixation
                                 </h3>
                                 <p
-                                    class="text-gray-300 text-lg leading-relaxed"
+                                    class="text-gray-300 text-base leading-relaxed"
                                 >
                                     Secure the reduction with final hardware
                                     placement, including the crucial
@@ -450,7 +452,7 @@ const description =
                                 <Image
                                     src={fix7}
                                     alt="Final hardware placement"
-                                    class="bg-[#1a1a1a] rounded-xl w-full h-full object-contain"
+                                    class="bg-white rounded-xl w-full h-full object-contain"
                                 />
                             </div>
                         </div>
@@ -458,11 +460,11 @@ const description =
                 </div>
 
                 <!-- Bone Grafting -->
-                <div class="bg-[#232323] p-8 rounded-2xl">
-                    <h2 class="mb-6 font-bold text-[var(--gold)] text-2xl">
+                <div class="bg-[#232323] p-5 rounded-xl">
+                    <h2 class="mb-4 font-bold text-[var(--gold)] text-xl">
                         Bone Grafting Considerations
                     </h2>
-                    <p class="mb-6 text-gray-300 text-lg leading-relaxed">
+                    <p class="mb-6 text-gray-300 text-base leading-relaxed">
                         In cases of significant bone loss or articular surface
                         depression, bone grafting plays a crucial role in
                         maintaining reduction and providing structural support.
@@ -471,15 +473,17 @@ const description =
                     </p>
 
                     <div
-                        class="bg-[#1a1a1a] p-6 border border-[var(--gold)]/20 rounded-xl"
+                        class="bg-[#1a1a1a] p-4 border border-[var(--gold)]/20 rounded-xl"
                     >
                         <h3
-                            class="flex items-center gap-2 mb-4 font-semibold text-gray-200 text-xl"
+                            class="flex items-center gap-2 mb-4 font-semibold text-gray-200 text-lg"
                         >
                             <Bone class="w-5 h-5 text-[var(--gold)]" />
                             Grafting Options and Applications
                         </h3>
-                        <ul class="space-y-6 text-gray-300 text-lg">
+                        <ul
+                            class="space-y-6 text-gray-300 text-base leading-relaxed"
+                        >
                             <li class="flex items-start gap-3">
                                 <ArrowRight
                                     class="mt-1.5 w-5 h-5 text-[var(--gold)]"
@@ -527,11 +531,11 @@ const description =
                     <div
                         class="bg-[#1a1a1a] mt-6 p-4 border border-[var(--gold)]/20 rounded-xl"
                     >
-                        <div class="flex items-start gap-3">
+                        <div class="flex items-start gap-2">
                             <AlertCircle
-                                class="mt-1 w-6 h-6 text-[var(--gold)]"
+                                class="mt-1 w-5 h-5 text-[var(--gold)]"
                             />
-                            <p class="text-gray-300 text-lg leading-relaxed">
+                            <p class="text-gray-300 text-base leading-relaxed">
                                 <strong class="text-gray-200"
                                     >Technical Tip:</strong
                                 > When using synthetic grafts, ensure adequate preparation

@@ -3,6 +3,7 @@ import BaseHead from "../components/BaseHead.astro";
 import Footer from "../components/Footer.astro";
 import { Image } from "astro:assets";
 import nickStrasser from "../assets/nick-strasser.jpeg";
+import { ChevronLeft } from "lucide-astro";
 
 const title = "About Dr. Nicholas Strasser | Orthopedic Indications";
 const description =
@@ -45,59 +46,49 @@ const experience = [
         </style>
     </head>
     <body class="bg-black min-h-screen text-white">
-        <main class="mx-auto px-4 py-12 md:py-20 max-w-4xl">
+        <main class="mx-auto px-3 py-8 md:py-16 max-w-4xl">
             <!-- Navigation -->
-            <nav class="mb-16">
+            <nav class="mb-12">
                 <a
                     href="/orthopedic-indications"
-                    class="inline-flex items-center gap-2 text-[var(--gold)] hover:text-[var(--gold-light)] transition-colors"
+                    class="inline-flex items-center gap-2 text-[var(--gold)] hover:text-[var(--gold-light)] text-sm transition-colors"
                 >
-                    <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        class="w-5 h-5"
-                        viewBox="0 0 20 20"
-                        fill="currentColor"
-                    >
-                        <path
-                            fill-rule="evenodd"
-                            d="M9.707 16.707a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414l6-6a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l4.293 4.293a1 1 0 010 1.414z"
-                            clip-rule="evenodd"></path>
-                    </svg>
+                    <ChevronLeft class="w-5 h-5" />
                     Back to Library
                 </a>
             </nav>
 
             <!-- Profile Header -->
-            <div class="flex flex-col items-center mb-16 text-center">
-                <div class="mb-8">
+            <div class="flex flex-col items-center mb-12 text-center">
+                <div class="mb-6">
                     <div
-                        class="inline-block bg-gradient-to-r from-[var(--gold)] via-[var(--gold-light)] to-[var(--gold)] p-2 rounded-full"
+                        class="inline-block bg-gradient-to-r from-[var(--gold)] via-[var(--gold-light)] to-[var(--gold)] p-1.5 rounded-full"
                     >
                         <Image
                             src={nickStrasser}
                             alt="Dr. Nicholas Strasser"
-                            class="rounded-full w-48 h-48 object-cover"
+                            class="rounded-full w-32 h-32 object-cover"
                         />
                     </div>
                 </div>
-                <h1 class="mb-4 font-bold text-4xl md:text-5xl">
+                <h1 class="mb-3 font-bold text-3xl md:text-4xl">
                     Nicholas Strasser, MD
                 </h1>
-                <p class="mb-4 text-[var(--gold)] text-xl">
+                <p class="mb-3 text-[var(--gold)] text-lg">
                     Orthopaedic Foot and Ankle Surgeon
                 </p>
-                <p class="text-gray-400 text-lg italic">
+                <p class="text-gray-400 text-base italic">
                     "The sole of orthopedics 👟"
                 </p>
             </div>
 
             <!-- About Section -->
-            <div class="space-y-12 mb-16">
-                <div class="bg-[#232323] p-8 rounded-2xl">
-                    <h2 class="mb-6 font-bold text-[var(--gold)] text-2xl">
+            <div class="space-y-8 mb-12">
+                <div class="bg-[#232323] p-5 rounded-xl">
+                    <h2 class="mb-4 font-bold text-[var(--gold)] text-xl">
                         About
                     </h2>
-                    <p class="text-gray-300 text-lg leading-relaxed">
+                    <p class="text-gray-300 text-base leading-relaxed">
                         I am an Orthopaedic foot and ankle surgeon specializing
                         in sports related foot and ankle injuries, currently
                         serving as an assistant professor in orthopaedics at the
@@ -109,8 +100,10 @@ const experience = [
                 </div>
 
                 <!-- Experience -->
-                <div class="bg-[#232323] p-8 rounded-2xl">
-                    <h2 class="mb-6 font-bold text-[var(--gold)] text-2xl">
+                <div class="bg-[#232323] p-5 rounded-xl">
+                    <h2
+                        class="mb-6 font-bold text-[var(--gold)] text-xl md:text-2xl"
+                    >
                         Professional Experience
                     </h2>
                     <div class="space-y-6">
@@ -135,11 +128,13 @@ const experience = [
                 </div>
 
                 <!-- Personal -->
-                <div class="bg-[#232323] p-8 rounded-2xl">
-                    <h2 class="mb-6 font-bold text-[var(--gold)] text-2xl">
+                <div class="bg-[#232323] p-5 rounded-xl">
+                    <h2
+                        class="mb-6 font-bold text-[var(--gold)] text-xl md:text-2xl"
+                    >
                         Personal Life
                     </h2>
-                    <p class="text-gray-300 text-lg leading-relaxed">
+                    <p class="text-gray-300 text-base leading-relaxed">
                         Together with my wife, we're raising 7 children with a
                         passion for adoption. Our family lives by the mission
                         statement founded in Ephesians 2:10: "For we are God's
@@ -150,28 +145,28 @@ const experience = [
             </div>
 
             <!-- Connect Section -->
-            <div class="mb-16">
+            <div class="mb-12">
                 <h2
-                    class="mb-8 font-bold text-[var(--gold)] text-2xl text-center"
+                    class="mb-6 font-bold text-[var(--gold)] text-xl text-center"
                 >
                     Connect & Learn
                 </h2>
-                <div class="flex flex-wrap justify-center gap-4">
+                <div class="flex flex-wrap justify-center gap-3">
                     <a
                         href="https://www.youtube.com/@OrthopedicIndications"
-                        class="bg-[var(--gold)] hover:bg-[var(--gold-light)] px-6 py-3 rounded-full font-semibold text-black transition-colors"
+                        class="bg-[var(--gold)] hover:bg-[var(--gold-light)] px-5 py-2.5 rounded-full font-semibold text-black transition-colors"
                     >
                         YouTube Channel
                     </a>
                     <a
                         href="https://nickstrassermd.com"
-                        class="bg-[#232323] hover:bg-[var(--gold)] px-6 py-3 border border-[var(--gold)] rounded-full font-semibold text-[var(--gold)] hover:text-black transition-colors"
+                        class="bg-[#232323] hover:bg-[var(--gold)] px-5 py-2.5 border border-[var(--gold)] rounded-full font-semibold text-[var(--gold)] hover:text-black transition-colors"
                     >
                         Newsletter Signup
                     </a>
                     <a
                         href="https://mededgesurgical.com"
-                        class="bg-[#232323] hover:bg-[var(--gold)] px-6 py-3 border border-[var(--gold)] rounded-full font-semibold text-[var(--gold)] hover:text-black transition-colors"
+                        class="bg-[#232323] hover:bg-[var(--gold)] px-5 py-2.5 border border-[var(--gold)] rounded-full font-semibold text-[var(--gold)] hover:text-black transition-colors"
                     >
                         MedEdge Surgical
                     </a>
